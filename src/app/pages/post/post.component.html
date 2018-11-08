@@ -1,0 +1,9 @@
+<div>
+  <button (click)="add()" >Yeni Post Ekle </button>
+<!--  <a [routerLink]="['/posts/add']">Yeni Post Ekle</a> -->
+<ul>
+  <li *ngFor="let item of list" >
+   <a [routerLink]="['/posts/',item.id]"> {{item.title}}</a>
+  </li>
+</ul>
+</div>
